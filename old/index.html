@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >JohnnyCheng</h1>
+                <h4 id="persona-tag" >iOS / 互联网</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">程挥竣</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">硕士</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">上海理工大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">18801732458</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">johnnycheng_usst@foxmail.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">http://chenghuijun.lofter.com</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Objective-C</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Swift</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">iOS SDK</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html/css</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Javascript</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">jQuery、Bootstrap
+
+
+                        </span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">Hibernate、Struts2、Spring、MySQL</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">移动端</label><span class="label-value">Instrument，MVC、Delegate、Singleton，KVO/KVC，多线程，CocoaPods，FNetworking、SDWebImage、FMDB、MBProgressHUD、ReactiveCocoa，SQLite，CoreData。runtime，Runloop，内存管理机制
+                        </span></li>
+                    </li>
+
+                    <li>
+                        <label class="left-label">其他</label><span class="label-value">Git，TCP/IP、HTTP协议，JSON/XML解析，linux简单语句</span></li>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>上海理工大学 - 电子信息工程专业（本科）2010-2014</h3>
+                        <h3>上海理工大学 - 仪器仪表工程专业（硕士）2014-2017</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>上海日佤信息技术有限公司－iOS实习生（实习）</h3>
+                        <p> 2016.01-2016.05      行业类别:互联网/电子商务      公司类型:私营</p>
+                        <p>前期参与软件需求分析,进行模块概要设计,模块详细设计,代码编写等工作 ,完成与工作相关的技术文档编写,提供产品相关技术支持,对软件后期的迭 代版本升级维护。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>EMC－测试工程师（实习）</h3>
+                        <p> 2016.01-2016.05      行业类别:互联网/电子商务      公司类型:私营</p>
+                        <p>使用Perl编写简单的测试脚本。学习V-Center,利用Vcenter结合SQL Server 建立私有云。安装Suse server。升级Cobra-E固件. 进行VNX2 Performance 测试,并且书写测试报告。
+                        </p>
+                          <h3>联合汽车电子－助理（实习）</h3>
+                          <p> 2016.01-2016.05      行业类别:互联网/电子商务      公司类型:私营</p>
+                        <p>利用vlookup进行每月一次的总结,对比数量的增加与减少。打电话确认订单 流转。将同事发过来的零件销售单提交到系统。下订单,熟悉完整流程,辅 助小组完成各项工作
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>iOS APP 日佤信息管理(已上线APPStore)</h3>
+                        <p>
+2016.02-2016.4 <br/>
+•项目地址<br/>https://itunes.apple.com/us/app/ri-wa-guan-li-xitong/id1095590218?mt=8<br/>
+•项目描述<br/>这款应用为钓具零售商提供账目的查询功能，针对钓具行业量身定做。让钓具零售商从繁琐的业务管理中解脱出来，让他们的管理仅仅有条。实现了商品销售，经营历程，商品检索，库存状况，往来户检索等几个功能。<br/>
+•项目职责<br/>1.负责整个项目的整体UI框架搭建<br/>
+2.负责接口调试,与服务器进行联调<br/>
+3.负责数据存储框架的搭建<br/>
+4.对程序进行测试、优化及上架App Store<br/>
+•技术点<br/>1.socket与服务器进行连接 XML数据解析<br/>
+2.使用FMDB对相关数据进行存储；UITableView布局应用界面；<br/>
+3.AutoLayout适配不同屏幕显示；<br/>
+4.代理/Notification 设计模式/单例设计模式实现了各个页面之间的对应数<br/>
+据传递。利用分类来封装和拓展一些方法,让程序更简洁等严格。<br/>
+5.UITableView及性能优化<br/>
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>iOS APP - 我的电台FM</h3>
+                        <p>
+  2016.06-2016.08 <br/>
+  •项目描述<br/>这是一款简单、实用的本地财务分析软件，专注记账理财，认真记录财富生活。<br/>
+•技术点<br/>1.UIBezierPath和CAShapeLayer绘制UI控件<br/>
+2.使用YYText实现cell中显示富文本需求<br/>
+3.使用大量的UIView动画和CAAnimation动画产生一些精美动画，自定义转场动画<br/>
+4.UICollectionView布局部分View<br/>
+5.自己设计了数据库中的多表联结<br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>iOS APP - 我的电台FM</h3>
+                        <p>
+2016.08-2016.09 <br/>
+•项目描述<br/>这是一款简单音乐播放软件。基于豆瓣FM的API。<br/>
+•技术点<br/>1.使用SDWebImage框架实现图片的下载和缓存<br/>
+2.使用AFN获得网络数据，并解析返回的JSON数据。<br/>
+3.MPMoviePlayerController音频播放，进度条显示、实现锁屏界面音乐播放<br/>
+4.使用Masonry适配不同屏幕显示<br/>
+                            <br/>
+                        </p>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>全国研究生数学建模大赛三等奖 2015年</h3>
+
+                    </li>
+                    <li>
+                        <h3>校级优秀毕业生 2014年</h3>
+                    </li>
+                    <li>
+                        <h3>国家励志奖学金 2013年</h3>
+                    </li>
+                       <li>
+                        <h3>上海理工大学“优秀团员” 2012年</h3>
+                    </li>
+                     </li>
+                       <li>
+                        <h3>全国C语言二级证书，上海市C语言二级证书 2012年</h3>
+                    </li>
+                      </li>
+                       <li>
+                        <h3>CET-6 2014年</h3>
+                    </li>
+
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                  <li>
+                    做事极具条理
+                  </li>
+                  <li>
+                      对待工作认真负责
+                  </li>
+                  <li>
+                      遇到不懂的问题,能耐心思考或者主动请教别人
+                  </li>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
